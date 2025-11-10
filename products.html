@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — Bazaar Marketplace</title>
+  <meta name="description" content="Browse products on Bazaar — a curated marketplace with a wide selection from trusted sellers." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">Bazaar</a>
+      <button id="menu-toggle-3" class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav id="main-nav-3" class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html" aria-current="page">Products</a>
+        <a href="contact.html">Contact</a>
+        <a id="auth-link" href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Products</h1>
+    <p class="muted">Explore our marketplace. Click "View" on any product to learn more.</p>
+
+    <section class="products-controls container">
+      <div class="controls-row">
+        <div class="search-wrapper">
+          <input id="product-search" type="search" placeholder="Search products..." aria-label="Search products">
+          <div id="search-suggestions" class="search-suggestions"></div>
+        </div>
+        <select id="product-filter" aria-label="Filter by category">
+          <option value="all">All categories</option>
+          <option value="men">Men</option>
+          <option value="women">Women</option>
+          <option value="kids">Kids</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="products-section container">
+      <h2 class="section-title">Men</h2>
+      <div class="products-grid" aria-label="Men products">
+        <article class="product-card" data-name="men formal shirt" data-category="men">
+          <img src="assets/images/men-formal-shirt.svg" alt="Men's Formal Shirt" class="product-img">
+          <h3>Men's Formal Shirt</h3>
+          <p>Crisp, tailored shirt perfect for office or formal occasions.</p>
+          <p class="product-price">₹899</p>
+          <p>
+            <button class="btn">View</button>
+            <button class="btn btn-primary add-to-cart" data-price="899">Add to Cart</button>
+          </p>
+        </article>
+        <article class="product-card" data-name="men casual tshirt" data-category="men">
+          <img src="assets/images/men-casual-tshirt.svg" alt="Casual Cotton T-Shirt" class="product-img">
+          <h3>Casual Cotton T-Shirt</h3>
+          <p>Soft, breathable t-shirt for everyday comfort and style.</p>
+          <p class="product-price">₹399</p>
+          <p>
+            <button class="btn">View</button>
+            <button class="btn btn-primary add-to-cart" data-price="399">Add to Cart</button>
+          </p>
+        </article>
+        <article class="product-card" data-name="men denim jeans" data-category="men">
+          <img src="assets/images/men-denim-jeans.svg" alt="Stretch Denim Jeans" class="product-img">
+          <h3>Stretch Denim Jeans</h3>
+          <p>Modern fit jeans with stretch for all-day movement.</p>
+          <p class="product-price">₹1299</p>
+          <p>
+            <button class="btn">View</button>
+            <button class="btn btn-primary add-to-cart" data-price="1299">Add to Cart</button>
+          </p>
+        </article>
+        <article class="product-card" data-name="men sneakers" data-category="men">
+          <img src="assets/images/men-sneakers.svg" alt="Classic Sneakers" class="product-img">
+          <h3>Classic Sneakers</h3>
+          <p>Timeless sneakers that pair well with any casual outfit.</p>
+          <p class="product-price">₹2499</p>
+          <p>
+            <button class="btn">View</button>
+            <button class="btn btn-primary add-to-cart" data-price="2499">Add to Cart</button>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="products-section container">
+      <h2 class="section-title">Women</h2>
+      <div class="products-grid" aria-label="Women products">
+        <article class="product-card" data-name="women silk kurti" data-category="women">
+          <img src="assets/images/women-silk-kurti.svg" alt="Royal Silk Kurti" class="product-img">
+          <h3>Royal Silk Kurti</h3>
+          <p>Elegant silk kurti with traditional patterns for festive occasions.</p>
+          <p class="product-price">₹1499</p>
+          <p>
+            <button class="btn">View</button>
+            <button class="btn btn-primary add-to-cart" data-price="1499">Add to Cart</button>
+          </p>
+        </article>
+        <article class="product-card" data-name="women western top" data-category="women">
+          <img src="assets/images/women-western-top.svg" alt="Trendy Western Top" class="product-img">
+          <h3>Trendy Western Top</h3>
+          <p>Modern western top with a stylish cut for a chic look.</p>
+          <p class="product-price">₹699</p>
+          <p>
+            <button class="btn">View</button>
+            <button class="btn btn-primary add-to-cart" data-price="699">Add to Cart</button>
+          </p>
+        </article>
+        <article class="product-card" data-name="women leggings" data-category="women">
+          <img src="assets/images/women-leggings.svg" alt="Comfortable Leggings" class="product-img">
+          <h3>Comfortable Leggings</h3>
+          <p>Soft, stretchable leggings perfect for daily wear and yoga.</p>
+          <p class="product-price">₹499</p>
+          <p>
+            <button class="btn">View</button>
+            <button class="btn btn-primary add-to-cart" data-price="499">Add to Cart</button>
+          </p>
+        </article>
+        <article class="product-card" data-name="women heels" data-category="women">
+          <img src="assets/images/women-heels.svg" alt="Elegant Heels" class="product-img">
+          <h3>Elegant Heels</h3>
+          <p>Graceful heels to complement your party and formal outfits.</p>
+          <p class="product-price">₹1199</p>
+          <p>
+            <button class="btn">View</button>
+            <button class="btn btn-primary add-to-cart" data-price="1199">Add to Cart</button>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="products-section container">
+      <h2 class="section-title">Kids</h2>
+      <div class="products-grid" aria-label="Kids products">
+        <article class="product-card" data-name="kids tshirt" data-category="kids">
+          <img src="assets/images/kids-tshirt.svg" alt="Soft Cotton Kids T-shirt" class="product-img">
+          <h3>Soft Cotton Kids T-shirt</h3>
+          <p>Gentle on skin, this t-shirt is perfect for play and daily wear.</p>
+          <p class="product-price">₹299</p>
+          <p>
+            <button class="btn">View</button>
+            <button class="btn btn-primary add-to-cart" data-price="299">Add to Cart</button>
+          </p>
+        </article>
+        <article class="product-card" data-name="kids shorts" data-category="kids">
+          <img src="assets/images/kids-shorts.svg" alt="Kids Play Shorts" class="product-img">
+          <h3>Kids Play Shorts</h3>
+          <p>Lightweight, durable shorts for active kids and summer fun.</p>
+          <p class="product-price">₹249</p>
+          <p>
+            <button class="btn">View</button>
+            <button class="btn btn-primary add-to-cart" data-price="249">Add to Cart</button>
+          </p>
+        </article>
+        <article class="product-card" data-name="kids school shoes" data-category="kids">
+          <img src="assets/images/kids-school-shoes.svg" alt="School Shoes" class="product-img">
+          <h3>School Shoes</h3>
+          <p>Sturdy, comfortable shoes designed for all-day school activities.</p>
+          <p class="product-price">₹799</p>
+          <p>
+            <button class="btn">View</button>
+            <button class="btn btn-primary add-to-cart" data-price="799">Add to Cart</button>
+          </p>
+        </article>
+      
+
+      <article class="product-card" data-name="kids pants 3" data-category="kids">
+        <img src="assets/images/kids-track-pants.svg" alt="Kids Track Pants" class="product-img">
+        <h3>Kids Pants 3</h3>
+        <p>Comfortable track pants for kids.</p>
+        <p class="product-price">₹399</p>
+        <p>
+          <button class="btn">View</button>
+          <button class="btn btn-primary add-to-cart" data-price="399">Add to Cart</button>
+        </p>
+      </article>
+
+      <article class="product-card" data-name="kids pants 4" data-category="kids">
+        <img src="assets/images/kids-cargo-pants.svg" alt="Kids Cargo Pants" class="product-img">
+        <h3>Kids Pants 4</h3>
+        <p>Adventure-ready cargo pants for kids.</p>
+        <p class="product-price">₹449</p>
+        <p>
+          <button class="btn">View</button>
+          <button class="btn btn-primary add-to-cart" data-price="449">Add to Cart</button>
+        </p>
+      </article>
+
+      <article class="product-card" data-name="kids pants 5" data-category="kids">
+  <img src="assets/images/kids-school-pants.svg" alt="Kids School Pants" class="product-img">
+        <h3>Kids Pants 5</h3>
+        <p>Smart casual pants for school.</p>
+        <p class="product-price">₹399</p>
+        <p>
+          <button class="btn">View</button>
+          <button class="btn btn-primary add-to-cart" data-price="399">Add to Cart</button>
+        </p>
+      </article>
+
+      <article class="product-card" data-name="kids accessory 1" data-category="kids">
+  <img src="assets/images/kids-backpack.svg" alt="Kids School Backpack" class="product-img">
+        <h3>Kids Accessory 1</h3>
+        <p>Fun and spacious school backpack.</p>
+        <p class="product-price">₹599</p>
+        <p>
+          <button class="btn">View</button>
+          <button class="btn btn-primary add-to-cart" data-price="599">Add to Cart</button>
+        </p>
+      </article>
+
+      <article class="product-card" data-name="kids accessory 2" data-category="kids">
+        <img src="assets/images/kids-winter-hat.svg" alt="Kids Winter Hat" class="product-img">
+        <h3>Kids Accessory 2</h3>
+        <p>Cozy winter beanie for kids.</p>
+        <p class="product-price">₹199</p>
+        <p>
+          <button class="btn">View</button>
+          <button class="btn btn-primary add-to-cart" data-price="199">Add to Cart</button>
+        </p>
+      </article>
+
+      <article class="product-card" data-name="kids accessory 3" data-category="kids">
+        <img src="assets/images/kids-sunglasses.svg" alt="Kids Sunglasses" class="product-img">
+        <h3>Kids Accessory 3</h3>
+        <p>Protective fun sunglasses for kids.</p>
+        <p class="product-price">₹299</p>
+        <p>
+          <button class="btn">View</button>
+          <button class="btn btn-primary add-to-cart" data-price="299">Add to Cart</button>
+        </p>
+      </article>
+
+      <article class="product-card" data-name="kids accessory 4" data-category="kids">
+        <img src="assets/images/kids-colorful-socks.svg" alt="Kids Colorful Socks" class="product-img">
+        <h3>Kids Accessory 4</h3>
+        <p>Fun patterned socks 5-pack.</p>
+        <p class="product-price">₹199</p>
+        <p>
+          <button class="btn">View</button>
+          <button class="btn btn-primary add-to-cart" data-price="199">Add to Cart</button>
+        </p>
+      </article>
+
+      <article class="product-card" data-name="kids accessory 5" data-category="kids">
+  <img src="assets/images/kids-lunchbox.svg" alt="Kids Lunchbox" class="product-img">
+        <h3>Kids Accessory 5</h3>
+        <p>Insulated fun lunchbox for school.</p>
+        <p class="product-price">₹249</p>
+        <p>
+          <button class="btn">View</button>
+          <button class="btn btn-primary add-to-cart" data-price="249">Add to Cart</button>
+        </p>
+      </article>
+
+      <article class="product-card" data-name="kids shoes 1" data-category="kids">
+  <img src="assets/images/kids-sneakers.svg" alt="Kids Sneakers" class="product-img">
+        <h3>Kids Shoes 1</h3>
+        <p>Lightweight comfortable sneakers.</p>
+        <p class="product-price">₹699</p>
+        <p>
+          <button class="btn">View</button>
+          <button class="btn btn-primary add-to-cart" data-price="699">Add to Cart</button>
+        </p>
+      </article>
+
+      <article class="product-card" data-name="kids shoes 2" data-category="kids">
+  <img src="assets/images/kids-first-walkers.svg" alt="Kids First Walkers" class="product-img">
+        <h3>Kids Shoes 2</h3>
+        <p>Soft first walking shoes.</p>
+        <p class="product-price">₹399</p>
+        <p>
+          <button class="btn">View</button>
+          <button class="btn btn-primary add-to-cart" data-price="399">Add to Cart</button>
+        </p>
+      </article>
+
+      <article class="product-card" data-name="kids shoes 3" data-category="kids">
+        <img src="assets/images/kids-sports-shoes.svg" alt="Kids Sports Shoes" class="product-img">
+        <h3>Kids Shoes 3</h3>
+        <p>Colorful athletic shoes for kids.</p>
+        <p class="product-price">₹599</p>
+        <p>
+          <button class="btn">View</button>
+          <button class="btn btn-primary add-to-cart" data-price="599">Add to Cart</button>
+        </p>
+      </article>
+
+      <article class="product-card" data-name="kids shoes 4" data-category="kids">
+        <img src="assets/images/kids-slip-on-shoes.svg" alt="Kids Slip-Ons" class="product-img">
+        <h3>Kids Shoes 4</h3>
+        <p>Easy-wear slip-on shoes for kids.</p>
+        <p class="product-price">₹449</p>
+        <p>
+          <button class="btn">View</button>
+          <button class="btn btn-primary add-to-cart" data-price="449">Add to Cart</button>
+        </p>
+      </article>
+
+      <article class="product-card" data-name="kids shoes 5" data-category="kids">
+        <img src="assets/images/kids-canvas-shoes.svg" alt="Kids Canvas Shoes" class="product-img">
+        <h3>Kids Shoes 5</h3>
+        <p>Lightweight canvas shoes for play.</p>
+        <p class="product-price">₹349</p>
+        <p>
+          <button class="btn">View</button>
+          <button class="btn btn-primary add-to-cart" data-price="349">Add to Cart</button>
+        </p>
+      </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Bazaar</strong>
+        <p>Connecting buyers and sellers with convenience.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="social">
+        <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+        <a href="#" aria-label="Facebook" class="social-link">Facebook</a>
+        <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+      </div>
+    </div>
+    <div class="container copyright">© <span id="year-3"></span> Bazaar. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

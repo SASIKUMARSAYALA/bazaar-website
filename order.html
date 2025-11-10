@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Place Order — Bazaar Marketplace</title>
+  <meta name="description" content="Place your order on Bazaar." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">Bazaar</a>
+      <button id="menu-toggle-4" class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav id="main-nav-4" class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a id="auth-link" href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Place Your Order</h1>
+    <p>Please fill your details below to complete the order.</p>
+
+    <form id="order-form" class="card">
+      <label>Name<br>
+        <input type="text" name="name" required>
+      </label>
+
+      <label>Phone Number<br>
+        <input type="tel" name="phone" required>
+      </label>
+
+      <label>Address<br>
+        <textarea name="address" rows="4" required></textarea>
+      </label>
+
+      <fieldset>
+        <legend>Payment Option</legend>
+        <label><input type="radio" name="payment" value="cod" checked> Cash on Delivery</label>
+      </fieldset>
+
+      <p><button class="btn btn-primary" type="submit">Confirm Order</button></p>
+      <div id="order-status" class="muted" style="margin-top:10px"></div>
+    </form>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Bazaar</strong>
+        <p>Connecting buyers and sellers with convenience.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="social">
+        <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+        <a href="#" aria-label="Facebook" class="social-link">Facebook</a>
+        <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+      </div>
+    </div>
+    <div class="container copyright">© <span id="year-4"></span> Bazaar. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

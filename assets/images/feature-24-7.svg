@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+  <defs>
+    <linearGradient id="clockGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F7C948" />
+      <stop offset="100%" style="stop-color:#FFB703" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="300" height="300" fill="#f8fafc" rx="15"/>
+  
+  <!-- Clock circle -->
+  <circle cx="150" cy="120" r="55" fill="url(#clockGrad)"/>
+  <circle cx="150" cy="120" r="48" fill="#fff"/>
+  
+  <!-- Clock numbers -->
+  <text x="150" y="85" font-size="14" font-weight="600" fill="#F7C948" text-anchor="middle">12</text>
+  <text x="180" y="125" font-size="14" font-weight="600" fill="#F7C948" text-anchor="middle">3</text>
+  <text x="150" y="160" font-size="14" font-weight="600" fill="#F7C948" text-anchor="middle">6</text>
+  <text x="120" y="125" font-size="14" font-weight="600" fill="#F7C948" text-anchor="middle">9</text>
+  
+  <!-- Clock hands -->
+  <line x1="150" y1="120" x2="150" y2="95" stroke="#F7C948" stroke-width="3" stroke-linecap="round"/>
+  <line x1="150" y1="120" x2="165" y2="120" stroke="#F7C948" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Center dot -->
+  <circle cx="150" cy="120" r="6" fill="#F7C948"/>
+  
+  <!-- Stars around -->
+  <text x="250" y="100" font-size="24" opacity="0.3">⭐</text>
+  <text x="60" y="150" font-size="20" opacity="0.3">⭐</text>
+  <text x="240" y="220" font-size="18" opacity="0.25">⭐</text>
+  
+  <!-- Text -->
+  <text x="150" y="260" font-size="16" font-weight="600" fill="#111" text-anchor="middle" font-family="Poppins">24/7 Available</text>
+</svg>

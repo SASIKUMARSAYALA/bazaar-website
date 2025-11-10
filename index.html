@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bazaar — Where Shopping Meets Convenience</title>
+  <meta name="description" content="Bazaar is an online marketplace connecting buyers with trusted sellers. Shop a wide range of products with great prices and 24/7 availability." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html">Bazaar</a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+        <a id="auth-link" href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <h1 class="hero-title">Bazaar</h1>
+            <p class="hero-tagline">Where Shopping Meets Convenience</p>
+            <p><a class="btn primary" href="products.html">Shop Now</a></p>
+          </div>
+          <div class="hero-image">
+            <img src="assets/images/hero-banner.svg" alt="Shopping illustration" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <img src="assets/images/feature-prices.svg" alt="Low prices icon" />
+        </div>
+        <h3>Low Prices</h3>
+        <p>Competitive pricing across all categories.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <img src="assets/images/feature-24-7.svg" alt="24/7 availability icon" />
+        </div>
+        <h3>24/7 Availability</h3>
+        <p>Shop anytime, from anywhere in the world.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <img src="assets/images/feature-trust.svg" alt="Trusted sellers icon" />
+        </div>
+        <h3>Trusted Sellers</h3>
+        <p>Partnered with verified sellers for quality.</p>
+      </div>
+    </section>
+
+    <section class="categories container">
+      <h2 class="section-title">Shop by Category</h2>
+      <div class="category-grid">
+        <div class="category-card" style="--accent: #FF6B6B;">
+          <div class="category-icon">👕</div>
+          <h3>Men's Fashion</h3>
+          <p>500+ Products</p>
+          <a href="products.html" class="category-link">Explore →</a>
+        </div>
+        <div class="category-card" style="--accent: #FFB4A2;">
+          <div class="category-icon">👗</div>
+          <h3>Women's Fashion</h3>
+          <p>800+ Products</p>
+          <a href="products.html" class="category-link">Explore →</a>
+        </div>
+        <div class="category-card" style="--accent: #4ECDC4;">
+          <div class="category-icon">🧒</div>
+          <h3>Kids' Wear</h3>
+          <p>400+ Products</p>
+          <a href="products.html" class="category-link">Explore →</a>
+        </div>
+        <div class="category-card" style="--accent: #95E1D3;">
+          <div class="category-icon">🎁</div>
+          <h3>Special Offers</h3>
+          <p>Up to 70% Off</p>
+          <a href="products.html" class="category-link">Explore →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="promo-banner">
+      <div class="container promo-content">
+        <h2 class="promo-title">✨ Limited Time Offer ✨</h2>
+        <p class="promo-subtitle">Get 30% OFF on your first purchase with code <span class="promo-code">BAZAAR30</span></p>
+        <a href="products.html" class="btn primary">Shop Now</a>
+      </div>
+    </section>
+
+    <section class="testimonials container">
+      <h2 class="section-title">What Our Customers Say</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Amazing products at unbeatable prices! Highly recommended!"</p>
+          <p class="testimonial-author">- Priya Sharma</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Fast shipping and excellent customer service. Will shop again!"</p>
+          <p class="testimonial-author">- Arjun Patel</p>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Great variety and quality. Bazaar is my go-to shopping platform."</p>
+          <p class="testimonial-author">- Ananya Gupta</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container cta-content">
+        <h2>Ready to Start Shopping?</h2>
+        <p>Browse thousands of products and find exactly what you're looking for!</p>
+        <a href="products.html" class="btn primary">Browse Products</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Bazaar</strong>
+        <p>Connecting buyers and sellers with convenience.</p>
+      </div>
+      <nav class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="social">
+        <a href="#" aria-label="Instagram" class="social-link">Instagram</a>
+        <a href="#" aria-label="Facebook" class="social-link">Facebook</a>
+        <a href="#" aria-label="Twitter" class="social-link">Twitter</a>
+      </div>
+    </div>
+    <div class="container copyright">© <span id="year"></span> Bazaar. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
